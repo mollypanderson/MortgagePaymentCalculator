@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,17 +12,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MortgagePaymentCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gSy-hi-F6f" userLabel="Stack View (Whole)">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gSy-hi-F6f" userLabel="Stack View (Whole)">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="GAK-pK-bCU" userLabel="Stack View (LR)">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="288"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uZ6-qN-jSa">
-                                                <rect key="frame" x="0.0" y="0.0" width="160" height="280"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="288"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Num Pmts:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6H-6c-ggQ">
                                                         <rect key="frame" x="35" y="30" width="80" height="19.5"/>
@@ -62,7 +62,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ihh-ic-eY9">
-                                                <rect key="frame" x="160" y="0.0" width="160" height="280"/>
+                                                <rect key="frame" x="160" y="0.0" width="160" height="288"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="65a-Kb-iX1">
                                                         <rect key="frame" x="7" y="25" width="145" height="34"/>
@@ -90,7 +90,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="145" id="VBg-wW-70q"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2bl-ik-CrF">
@@ -118,10 +118,10 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SxV-au-ccA">
-                                        <rect key="frame" x="0.0" y="288" width="320" height="280"/>
+                                        <rect key="frame" x="0.0" y="296" width="320" height="184"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4OM-vd-Nfp">
-                                                <rect key="frame" x="121" y="50" width="78" height="24"/>
+                                                <rect key="frame" x="121" y="5" width="78" height="24"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="78" id="YGj-Xh-9jV"/>
@@ -139,12 +139,14 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="4OM-vd-Nfp" firstAttribute="centerX" secondItem="SxV-au-ccA" secondAttribute="centerX" id="TcT-XN-LOT"/>
-                                            <constraint firstItem="4OM-vd-Nfp" firstAttribute="top" secondItem="SxV-au-ccA" secondAttribute="top" constant="50" id="i1b-Eu-AaF"/>
+                                            <constraint firstItem="4OM-vd-Nfp" firstAttribute="top" secondItem="SxV-au-ccA" secondAttribute="top" constant="5" id="i1b-Eu-AaF"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="GAK-pK-bCU" secondAttribute="trailing" id="9RN-1a-uPu"/>
+                                    <constraint firstItem="SxV-au-ccA" firstAttribute="height" secondItem="gSy-hi-F6f" secondAttribute="height" multiplier="0.4" id="Dw9-EJ-fhx"/>
+                                    <constraint firstItem="GAK-pK-bCU" firstAttribute="height" secondItem="gSy-hi-F6f" secondAttribute="height" multiplier="0.6" id="QeC-fn-JFd"/>
                                     <constraint firstItem="GAK-pK-bCU" firstAttribute="leading" secondItem="gSy-hi-F6f" secondAttribute="leading" id="eog-l2-yfg"/>
                                     <constraint firstItem="GAK-pK-bCU" firstAttribute="top" secondItem="gSy-hi-F6f" secondAttribute="top" id="mxv-M5-mIG"/>
                                     <constraint firstItem="SxV-au-ccA" firstAttribute="top" secondItem="GAK-pK-bCU" secondAttribute="bottom" id="wwH-ac-Vt2"/>
