@@ -10,9 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var leftView: UIView!
-    @IBOutlet weak var rightView: UIView!
-    @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var paymentsField: UITextField!
     
     @IBOutlet weak var interestRateField: UITextField!
@@ -56,11 +53,6 @@ class ViewController: UIViewController {
             
         }
     }
-    
-//    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-//        return UIOrientationMask(rawValue: (UIInterfaceOrientationMask.portrait.rawValue |
-//            UIInterfaceOrientationMask.landscapeLeft.rawValue))
-//    }
 
 }
 
